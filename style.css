@@ -1,20 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: black;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
 .circle {
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    /* background-image: url(./images/orange_galaxy_swirl.jpg);
+    background-size: contain; */
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: pulse 1s infinite alternate, rotate 1s infinite linear;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 10px 0px rgba(0, 255, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0px 0px 18px 0px rgba(0, 255, 0, 0.9);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .answer-circle {
     width: 100px;
     height: 100px;
     background-color: white;
-    border-radius: 100%;
+    border-radius: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,6 +65,29 @@
     align-items: center;
 }
 
+h1, h2 {
+  color: white;
+}
+
+h1 {
+  margin: 4rem 0rem 2rem 0rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+#ask {
+  margin-bottom: 4rem;
+  width: 290px;
+  height: 30px;
+}
+
+.shake-btn {
+  margin: 4rem;
+  width: 100px;
+  height: 30px;
+}
 /* testing animations */
 
 .loader {

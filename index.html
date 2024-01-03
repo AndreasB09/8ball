@@ -8,18 +8,22 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <h1>Magic 8 Ball</h1>
-    <h2>What would you like to know</h2>
-    <div>
-        <label for="" class="">Ask your question</label>
-        <input type="text" placeholder="Ask...">
-    </div>
-    <div class="circle">
-        <div class="answer-circle">
-            <div id="result"></div>
+    <div class="group">
+        <div class="title">
+            <h1>Magic 8 Ball</h1>
+            <h2>What would you like to know</h2>
         </div>
+        <div class="ask">
+            <!-- <label for="" class="">Ask your question</label> -->
+            <input id="ask" type="text" placeholder="Ask...">
+        </div>
+        <div class="circle">
+            <div class="answer-circle">
+                <div id="result"></div>
+            </div>
+        </div>
+        <button class="shake-btn">Shake Me</button>
     </div>
-    <button class="shake-btn">Shake Me</button>
 <!-- testing animations -->
     <div class="loader">
     <span></span>
