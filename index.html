@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Overlock+SC&display=swap" rel="stylesheet">
     <script src="app.js" defer></script>
 </head>
 <body>
     <div class="group">
         <div class="title">
-            <h1>Magic 8 Ball</h1>
-            <h2>What would you like to know</h2>
+            <h1>Welcome Traveler</h1>
+            <ul class="image-list">
+                <li id="fire"><img src="./images/fire_white.svg"></li>
+                <li id="water"><img src="./images/water_white.svg"></li>
+                <li id="leaf"><img src="./images/leaf_white.svg"></li>
+                <li id="air"><img src="./images/air_white.svg"></li>
+            </ul>
+            <h2>Ask the spirits for guidance</h2>
         </div>
         <div class="ask">
             <!-- <label for="" class="">Ask your question</label> -->
@@ -23,14 +32,6 @@
             </div>
         </div>
         <button class="shake-btn">Shake Me</button>
-    </div>
-<!-- testing animations -->
-    <div class="loader">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-    
+    </div>    
 </body>
 </html>

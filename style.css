@@ -5,6 +5,8 @@
 
 body {
   background-color: black;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Overlock SC', sans-serif;
 }
 
 .group {
@@ -17,8 +19,6 @@ body {
 .circle {
     width: 300px;
     height: 300px;
-    /* background-image: url(./images/orange_galaxy_swirl.jpg);
-    background-size: contain; */
     background-color: rgb(0, 0, 0);
     border-radius: 50%;
     display: flex;
@@ -88,50 +88,25 @@ h2 {
   width: 100px;
   height: 30px;
 }
-/* testing animations */
 
-.loader {
-    margin-top: 50px;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #4271E3;
-    animation: animate 3s linear infinite;
+.image-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
 }
 
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.image-list li {
+  margin: 0 20px;
 }
 
-.loader span {
-  position: absolute;
-  width: 100px;
-  height: 100px;
+.image-list img {
   border-radius: 50%;
-  background: linear-gradient(#CA43D6, #A64FD9, #4271E3);
+  border: 2px solid white;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
 }
 
-.loader span:nth-child(1) {
-  filter: blur(5px);
-}
-
-.loader span:nth-child(2) {
-  filter: blur(10px);
-}
-
-.loader::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  background: white;
-  border-radius: 50%;
+.image-list img:hover {
+  border-color: blue; /* Change border color on hover */
 }
