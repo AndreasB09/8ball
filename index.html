@@ -15,11 +15,11 @@
         <div class="title">
             <h1>Welcome Traveler</h1>
             <ul class="image-list">
-                <li id="fire"><img src="./images/fire_white.svg"></li>
-                <li id="water"><img src="./images/water_white.svg"></li>
-                <li id="leaf"><img src="./images/leaf_white.svg"></li>
-                <li id="air"><img src="./images/air_white.svg"></li>
-            </ul>
+                <li id="fire" onclick="changeImage('fire')"><img src="./images/fire_white.svg" onmouseover="this.src='./images/fire_yellow.svg'" onmouseout="this.src='./images/fire_white.svg'"></li>
+                <li id="water" onclick="changeImage('water')"><img src="./images/water_white.svg" onmouseover="this.src='./images/water_blue.svg'" onmouseout="this.src='./images/water_white.svg'"></li>
+                <li id="leaf" onclick="changeImage('leaf')"><img src="./images/leaf_white.svg" onmouseover="this.src='./images/leaf_green.svg'" onmouseout="this.src='./images/leaf_white.svg'"></li>
+                <li id="air" onclick="changeImage('air')"><img src="./images/air_white.svg" onmouseover="this.src='./images/air_purple.svg'" onmouseout="this.src='./images/air_white.svg'"></li>
+        </ul>
             <h2>Ask the spirits for guidance</h2>
         </div>
         <div class="ask">
@@ -27,11 +27,9 @@
             <input id="ask" type="text" placeholder="Ask...">
         </div>
         <div class="circle">
-            <div class="answer-circle">
-                <div id="result"></div>
-            </div>
+            <div id="result"></div>
         </div>
-        <button class="shake-btn">Shake Me</button>
+        <button class="shake-btn">Spirit me away</button>
     </div>    
 </body>
 </html>

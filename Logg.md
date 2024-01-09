@@ -8,23 +8,15 @@ Done the basics. The site works and does what I want and most of the styling is 
 Had an idea to add some color selectors for the page. Was thinking I'd go elemental themed so fire, water, earth and then when you click the buttons the colors change. Went back to figma and finalized the design. Made the icons I need in Figma as well. Started coding it and got pretty far. A bit more to go but should get it done tommorow.
 
 05.01.24
+Ran into some problems with the javascript code. Figured it would be as basic as doing a darkmode but that approach didn't quite work. Tried a couple of different things and ended up using switch cases for the elements. After that I spent most of the afternoon trying to get the pulse animation to change color on css depending on what icon you pressed but it wouldn't do it and became quite messy. Realized I might need to do that as in javascript as well.
 
+08.01.24
+Did research on how to link the pulse animation to the list elements and make them cooperate. Eventually I abandoned that idea and figured I already had the code for switching the colors. So I abandoned they way I was trying to do it in css and extended the JS function to incorporate the pulse animation as well.
 
-What I need
-- inputfield for question
-- button to get result
-- where should the result show up?
-    would like them inside the circle
-    maybe have a shadowy orb inside the circle
+End of the project;
+Not really happy with it. It looks boring, the code is messy and I started over a million times. As usual once I get sort of close to finnished I get a bunch of ideas on what I could add in the future. Kindly feel like I'm just stumbling arouhnd when it comes to javascript and it takes me forever to wrack my brain around what I want to write and how to think around the code. Makes for quite a timesink to even write the most basic stuff. But it's not all gloom. Have quite a few things I've taken from this task that I will plan for in the future. Hopefully I can get around to keep working on this one in the future. Maybe redesign it a bit. It needs more colors for sure and I have some other ideas I would like to incorporate as well.
 
--javascript
-    - clear when new question is asked
-    - array with answers
-    - 
-
-To-do-list
-Figma final design.
-Icon images
-font
-Make the color switches
-Style away
+!!!
+FIGMA FILE: 
+https://www.figma.com/file/MXaMkBSMWnRjlgwLpNN15Y/8-Ball?type=design&node-id=0-1&mode=design&t=J6SG0ySXRM5haogZ-0
+!!!
